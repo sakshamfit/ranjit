@@ -1,0 +1,44 @@
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  reactStrictMode: true,
+  poweredByHeader: false,
+  // the review preview is served from a proxied host, not localhost
+  allowedDevOrigins: ["*.e2b.app"],
+  // the floating development badge could be mistaken for part of the design during review
+  devIndicators: false,
+  images: {
+    // WebP only: it decodes far faster than AVIF, so large images appear without scroll hitches
+    formats: ["image/webp"],
+    qualities: [70, 75, 78, 80, 82, 84, 85, 88, 90, 92],
+    deviceSizes: [390, 640, 828, 1080, 1280, 1600, 1920, 2400, 2880],
+    imageSizes: [64, 128, 192, 256, 384],
+  },
+  async redirects() {
+    return [
+      {
+        // the profile opens on the About section, so /about is the home page
+        source: "/about",
+        destination: "/#about",
+        permanent: true,
+      },
+    ];
+  },
+  async headers() {
+    return [
+      {
+        // the worker file itself must always be re-checked so updates reach returning visitors
+        source: "/sw.js",
+        headers: [
+          { key: "Cache-Control", value: "no-cache, no-store, must-revalidate" },
+          { key: "Service-Worker-Allowed", value: "/" },
+        ],
+      },
+    ];
+  },
+  experimental: {
+    optimizePackageImports: ["@phosphor-icons/react"],
+  },
+};
+
+export default nextConfig;
