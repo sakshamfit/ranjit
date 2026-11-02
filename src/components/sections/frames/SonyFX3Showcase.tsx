@@ -3,12 +3,12 @@ import Link from "next/link";
 import { Aperture } from "@phosphor-icons/react/dist/ssr/Aperture";
 import { ArrowUpRight } from "@phosphor-icons/react/dist/ssr/ArrowUpRight";
 import { Camera } from "@phosphor-icons/react/dist/ssr/Camera";
-import { sonyM4Profile } from "@/content/frames";
+import { sonyFX3Profile } from "@/content/frames";
 
-export function SonyM4Showcase() {
+export function SonyFX3Showcase() {
   return (
     <section
-      id="sony-m4"
+      id="sony-fx3"
       aria-labelledby="sony-m4-heading"
       data-header-theme="light"
       className="relative overflow-hidden border-b border-line bg-white"
@@ -21,14 +21,14 @@ export function SonyM4Showcase() {
         >
           <p className="inline-flex items-center gap-2.5 text-[0.75rem] font-semibold uppercase tracking-[0.18em] text-blue">
             <Camera size={16} weight="duotone" className="text-orange" aria-hidden="true" />
-            <span>{sonyM4Profile.eyebrow}</span>
+            <span>{sonyFX3Profile.eyebrow}</span>
           </p>
           <div className="flex items-center gap-3 text-[0.7rem] font-semibold uppercase tracking-[0.15em] text-muted">
             <span className="inline-flex items-center gap-1.5 rounded-full border border-orange/30 bg-orange/8 px-3 py-1 text-orange">
               <span className="size-1.5 rounded-full bg-orange" aria-hidden="true" />
-              {sonyM4Profile.badge}
+              {sonyFX3Profile.badge}
             </span>
-            <span className="num hidden sm:inline">FE G MASTER · S-LOG3 · DUAL CFEXPRESS-A</span>
+            <span className="num hidden sm:inline">FE G MASTER · S-LOG3 · DUAL CARD SLOTS</span>
           </div>
         </div>
 
@@ -40,17 +40,17 @@ export function SonyM4Showcase() {
               <div className="mb-2 flex items-center justify-between px-1 font-mono text-[0.64rem] tracking-[0.13em] text-white/75">
                 <span className="inline-flex items-center gap-1.5 font-semibold text-white">
                   <span className="size-1.5 rounded-full bg-orange" aria-hidden="true" />
-                  α7M4 · RAW+4K
+                  FX3 · 4K 10-BIT
                 </span>
                 <span className="text-white/55">[EYE-AF]</span>
                 <span className="num text-orange">FRM · 00</span>
               </div>
 
-              {/* Clean 4:5 Matted Optical Frame — NO overlay blocking Ranjit's camera */}
+              {/* Clean 4:5 Matted Optical Frame — NO overlay blocking RANJEET's camera */}
               <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[12px] border border-white/15 bg-navy-900">
                 <Image
-                  src={sonyM4Profile.portrait.src}
-                  alt={sonyM4Profile.portrait.alt}
+                  src={sonyFX3Profile.portrait.src}
+                  alt={sonyFX3Profile.portrait.alt}
                   fill
                   sizes="(min-width: 1024px) 340px, 85vw"
                   className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.025]"
@@ -77,11 +77,11 @@ export function SonyM4Showcase() {
               {/* Bottom optical EXIF strip placed cleanly BELOW the image */}
               <figcaption className="mt-2.5 space-y-1 px-1">
                 <div className="flex items-center justify-between font-mono text-[0.65rem] tracking-[0.09em] text-white/88">
-                  <span>ILCE-7M4 · FE 24–70mm GM II</span>
+                  <span>ILME-FX3 · FE 24–70mm GM II</span>
                   <span className="num text-orange">f/2.8 · 1/500s</span>
                 </div>
                 <p className="text-[0.74rem] text-white/62">
-                  Ranjit on set — Golden-hour sandstone courtyard
+                  RANJEET on set — Golden-hour sandstone courtyard
                 </p>
               </figcaption>
             </figure>
@@ -96,8 +96,8 @@ export function SonyM4Showcase() {
               data-reveal
               style={{ ["--d" as string]: "60ms" }}
             >
-              <span className="block">{sonyM4Profile.headline[0]}</span>
-              <span className="block text-navy">{sonyM4Profile.headline[1]}</span>
+              <span className="block">{sonyFX3Profile.headline[0]}</span>
+              <span className="block text-navy">{sonyFX3Profile.headline[1]}</span>
             </h2>
 
             <p
@@ -105,7 +105,7 @@ export function SonyM4Showcase() {
               data-reveal
               style={{ ["--d" as string]: "130ms" }}
             >
-              {sonyM4Profile.lead}
+              {sonyFX3Profile.lead}
             </p>
 
             {/* 4-tile optical readout strip */}
@@ -114,7 +114,7 @@ export function SonyM4Showcase() {
               data-reveal
               style={{ ["--d" as string]: "190ms" }}
             >
-              {sonyM4Profile.specs.map((spec) => (
+              {sonyFX3Profile.specs.map((spec) => (
                 <div
                   key={spec.code}
                   className="rounded-[14px] border border-line bg-mist/75 p-3.5 transition-colors hover:border-navy/28 hover:bg-cloud/60"
@@ -150,7 +150,7 @@ export function SonyM4Showcase() {
               </div>
 
               <ol className="divide-y divide-line">
-                {sonyM4Profile.lensIndex.map((item) => (
+                {sonyFX3Profile.lensIndex.map((item) => (
                   <li
                     key={item.index}
                     className="grid gap-1.5 px-4 py-3 transition-colors hover:bg-mist/55 sm:grid-cols-[2.2rem_minmax(0,1.2fr)_minmax(0,1.4fr)] sm:items-center sm:gap-4 sm:px-5"
@@ -176,10 +176,10 @@ export function SonyM4Showcase() {
               style={{ ["--d" as string]: "300ms" }}
             >
               <Link
-                href="/projects/sony-m4-photography"
+                href="/projects/sony-fx3-photography"
                 className="inline-flex items-center gap-2 rounded-full bg-navy px-5 py-2.5 text-[0.82rem] font-semibold text-white transition-colors hover:bg-blue"
               >
-                <span>Read Sony M4 Case Study</span>
+                <span>Read Sony FX3 Case Study</span>
                 <ArrowUpRight size={14} weight="bold" aria-hidden="true" />
               </Link>
               <Link

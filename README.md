@@ -1,7 +1,7 @@
-# Ranjit — Drone Photographer Portfolio
+# RANJEET — Drone Photographer Portfolio
 
-A fast, mobile-first portfolio website for **Ranjit**, a drone photographer and aerial cinematographer
-based in **Gorakhpur, Uttar Pradesh, India** (Instagram / YouTube: `@gkp_drone`). It presents his aerial
+A fast, mobile-first portfolio website for **RANJEET**, a drone photographer and aerial cinematographer
+based in **Bahag 1, West Chhapar, Betthia, Bihar, India** (Instagram: `@ranjeet_gupta_94`). It presents his aerial
 films, stills, mapping and site-documentation work, the camera and drone kit behind them, and gives
 clients one-tap ways to call, WhatsApp, email or follow him.
 
@@ -9,7 +9,7 @@ clients one-tap ways to call, WhatsApp, email or follow him.
 
 | | |
 | --- | --- |
-| **For** | Ranjit, drone photographer (the client) |
+| **For** | RANJEET, drone photographer (the client) |
 | **Built by** | [`sakshamfit`](https://github.com/sakshamfit) on GitHub — Anshuman Pandey, founder of NEARconnect, who builds portfolio and business sites for local clients (see his other repos, e.g. `prince-portfolio`, `import-exprot-portfolio`, `real-state`) and his own site at <https://sakshamfit.netlify.app/> |
 | **Repository** | <https://github.com/sakshamfit/ranjit> (public, default branch `main`) |
 | **Stack** | Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS 4, Motion, Lenis, Phosphor icons |
@@ -18,7 +18,7 @@ clients one-tap ways to call, WhatsApp, email or follow him.
 
 ### What a visitor sees
 
-1. **The profile (`/`)** — the site opens on **About**: the portrait stage (Ranjit standing in front of
+1. **The profile (`/`)** — the site opens on **About**: the portrait stage (RANJEET standing in front of
    his own name, the five stages of a shoot around him) with the *field deck* on the right — what a
    booking produces, a flight-instrument readout and a booking note — then “Why choose me?”.
 2. **Experience, Projects, Skills, Education** — the flight pipeline and numbers,
@@ -71,8 +71,8 @@ Other scripts: `npm run lint`, `npm run typecheck`, `npm run generate:maps`
 
 | Route | Content |
 | --- | --- |
-| `/` | The profile: Sony α7 IV & aerial portrait stage, chapter index, selected frames, crew & packages, “Why choose me?” |
-| `/frames` | Curated 3:2 contact sheet frames, switchable EXIF Master Index, Sony α7 IV optical rig & shoot crew |
+| `/` | The profile: Sony FX3 & aerial portrait stage, chapter index, selected frames, crew & packages, “Why choose me?” |
+| `/frames` | Curated 3:2 contact sheet frames, switchable EXIF Master Index, Sony FX3 optical rig & shoot crew |
 | `/about` | Redirects to `/#about` — About is the opening screen of the site |
 | `/experience` | The flight pipeline, roles, KPIs and the case-study cards |
 | `/projects` | Case studies with working demonstrations |
@@ -104,9 +104,9 @@ where they belong to the cutting-mat stationery language. Font licensing is reco
 
 ## Contact details
 
-Ranjit's email, phone and the Instagram / Facebook / YouTube / WhatsApp links are set in
+RANJEET's email, phone and the Instagram / Facebook / YouTube / WhatsApp links are set in
 `src/content/site.ts` (the footer, the menu and `/contact` all read from there). WhatsApp points
-at the same number as the phone (`wa.me/918009369410`).
+at the same number as the phone (`wa.me/917654718165`).
 
 ## Offline, installable and mobile
 
@@ -134,7 +134,8 @@ visitor's mail app with a pre-filled draft, and the phone, WhatsApp and email li
 
 Any Node host works (`npm run build && npm start`); Vercel and Netlify's Next.js runtime both suit it.
 Set `NEXT_PUBLIC_SITE_URL` to the live domain. To make the contact form send mail directly, set
-`RESEND_API_KEY` and `CONTACT_TO_EMAIL`; without them the form opens the visitor's email app with a
+`RESEND_API_KEY`; the form sends to `site.email` (`rg3917289@gmail.com`) unless
+`CONTACT_TO_EMAIL` overrides it. Without an API key the form opens the visitor's email app with a
 pre-filled draft. The service worker only runs over HTTPS (or localhost).
 
 ## Working on this repository

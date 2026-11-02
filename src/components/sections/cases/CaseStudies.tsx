@@ -12,17 +12,17 @@ import { KitPlanningLab } from "@/components/dashboards/KitPlanningLab";
 import { KitCoverageView } from "@/components/dashboards/KitCoverageView";
 import { BriefBlock, CaseLabel, CaseNav, ResultCard, ToolTags } from "./case-parts";
 import { FramesAndIndexSection } from "@/components/sections/frames/FramesAndIndexSection";
-import { sonyM4Profile, studioPhotographers } from "@/content/frames";
+import { sonyFX3Profile, studioPhotographers } from "@/content/frames";
 
 /* ---------------------------------------------------------------------------
-   01  Sony α7 IV (M4) Portraits, Weddings & Editorial Frames
+   01  Sony FX3 Portraits, Weddings & Editorial Frames
    ------------------------------------------------------------------------- */
-export function CaseSonyM4Photography() {
-  const p = projectBySlug["sony-m4-photography"];
+export function CaseSonyFX3Photography() {
+  const p = projectBySlug["sony-fx3-photography"];
   return (
     <article
-      id="case-sony-m4-photography"
-      aria-labelledby="case-sony-m4-title"
+      id="case-sony-fx3-photography"
+      aria-labelledby="case-sony-fx3-title"
       data-header-theme="light"
       className="relative bg-white"
     >
@@ -31,7 +31,7 @@ export function CaseSonyM4Photography() {
           <div className="lg:col-span-7">
             <CaseLabel project={p} />
             <h1
-              id="case-sony-m4-title"
+              id="case-sony-fx3-title"
               data-section-heading
               className="type-title balance mt-5 text-ink"
               data-reveal
@@ -64,25 +64,25 @@ export function CaseSonyM4Photography() {
           </aside>
         </div>
 
-        {/* Hero Framed Split: Ranjit holding Sony α7 IV + Problem / Objective / Approach */}
+        {/* Hero Framed Split: RANJEET holding Sony FX3 + Problem / Objective / Approach */}
         <div className="mt-16 grid gap-10 border-t border-line pt-12 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-4" data-reveal="rise">
             <figure className="mx-auto w-full max-w-[21.5rem] overflow-hidden rounded-[20px] border border-navy/15 bg-navy-950 p-3 text-white shadow-xl lg:mx-0">
               <div className="mb-2 flex items-center justify-between font-mono text-[0.65rem] tracking-[0.13em] text-white/75">
-                <span className="text-orange">● SONY α7 IV · ILCE-7M4</span>
-                <span className="num">33MP RAW</span>
+                <span className="text-orange">● SONY FX3 · ILME-FX3</span>
+                <span className="num">4K 10-BIT</span>
               </div>
               <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[12px] border border-white/15">
                 <Image
-                  src={sonyM4Profile.portrait.src}
-                  alt={sonyM4Profile.portrait.alt}
+                  src={sonyFX3Profile.portrait.src}
+                  alt={sonyFX3Profile.portrait.alt}
                   fill
                   sizes="(min-width: 1024px) 340px, 85vw"
                   className="object-cover object-top"
                 />
               </div>
               <figcaption className="mt-2.5 flex items-center justify-between font-mono text-[0.66rem] text-white/70">
-                <span>Ranjit — Lead Sony M4 Lens</span>
+                <span>RANJEET — Lead Sony FX3 Lens</span>
                 <span className="text-orange">FE 24–70mm GM II</span>
               </figcaption>
             </figure>
@@ -98,7 +98,7 @@ export function CaseSonyM4Photography() {
 
             <div className="border-t border-line pt-8">
               <h2 className="text-[0.8rem] font-semibold uppercase tracking-[0.14em] text-muted" data-reveal>
-                How Sony M4 commissions are run
+                How Sony FX3 commissions are run
               </h2>
               <ol className="mt-4 grid gap-5">
                 {p.approach.map((a, i) => (
@@ -242,7 +242,7 @@ export function CaseAerialFilms() {
         </div>
 
         <CaseNav
-          prev={{ href: "/projects/sony-m4-photography", label: projectBySlug["sony-m4-photography"].shortTitle }}
+          prev={{ href: "/projects/sony-fx3-photography", label: projectBySlug["sony-fx3-photography"].shortTitle }}
           next={{ href: "/projects/aerial-mapping", label: projectBySlug["aerial-mapping"].shortTitle }}
         />
       </div>
@@ -624,7 +624,7 @@ export function CaseProgressDocumentation() {
 
 /** Case study page bodies, keyed by project slug. */
 export const caseStudyBySlug = {
-  "sony-m4-photography": CaseSonyM4Photography,
+  "sony-fx3-photography": CaseSonyFX3Photography,
   "aerial-films": CaseAerialFilms,
   "aerial-mapping": CaseMapping,
   "kit-management": CaseKitManagement,

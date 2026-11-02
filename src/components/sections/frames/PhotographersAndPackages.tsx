@@ -26,13 +26,13 @@ export function PhotographersAndPackages() {
               data-section-heading
               className="type-title balance mt-3 text-ink"
             >
-              Led by Ranjit. Scaled with specialist photographers.
+              Led by RANJEET. Scaled with specialist photographers.
             </h2>
           </div>
           <p className="type-lead pretty text-ink-2 lg:col-span-5">
             Intimate portraits, property shoots and mapping flights are handled one-on-one by
-            Ranjit. For grand weddings, multi-stage celebrations and commercial productions, Ranjit
-            brings his dedicated Sony α7 IV second shooter, gimbal cinematographer and lighting
+            RANJEET. For grand weddings, multi-stage celebrations and commercial productions, RANJEET
+            brings his dedicated Sony FX3 second shooter, gimbal cinematographer and lighting
             wrangler.
           </p>
         </div>

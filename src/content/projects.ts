@@ -1,5 +1,5 @@
 /**
- * Case studies for Ranjit's Sony α7 IV photography, aerial cinema and studio systems.
+ * Case studies for RANJEET's Sony FX3 photography, aerial cinema and studio systems.
  *
  * Interactive figures used in the case pages live in /src/content/demo and are always
  * labelled on screen as demonstration data.
@@ -11,7 +11,7 @@ export type ProjectCategory = "stills" | "aerial" | "mapping" | "systems";
 
 export const projectCategories: { id: ProjectCategory | "all"; label: string }[] = [
   { id: "all", label: "All index (05)" },
-  { id: "stills", label: "Sony M4 Photography" },
+  { id: "stills", label: "Sony FX3 Photography" },
   { id: "aerial", label: "Aerial Film" },
   { id: "mapping", label: "Mapping & Docs" },
   { id: "systems", label: "Studio Systems" },
@@ -57,27 +57,27 @@ export const resultKindLabel: Record<ResultKind, string> = {
 
 export const projects: Project[] = [
   {
-    slug: "sony-m4-photography",
+    slug: "sony-fx3-photography",
     index: "01",
-    code: "CS·M4·01",
-    camera: "Sony α7 IV (ILCE-7M4)",
-    title: "Sony α7 IV Portraits, Weddings & Editorial Frames",
-    shortTitle: "Sony M4 photography",
+    code: "CS·FX3·01",
+    camera: "Sony FX3 (ILME-FX3)",
+    title: "Sony FX3 Portraits, Weddings & Editorial Frames",
+    shortTitle: "Sony FX3 photography",
     oneLiner:
-      "33MP full-frame portraits, bridal storytelling, heritage twilight frames and 10-bit 4K handheld sequences shot on the Sony Alpha a7 IV with G Master glass — solo or with Ranjit's multi-photographer crew.",
+      "Full-frame portraits, bridal storytelling, heritage twilight frames and 10-bit 4K handheld sequences shot on the Sony FX3 with G Master glass — solo or with RANJEET's multi-photographer crew.",
     tools: [
-      "Sony Alpha a7 IV (M4)",
+      "Sony FX3",
       "FE 85mm f/1.4 GM",
       "FE 24–70mm f/2.8 GM II",
       "Godox AD600 Pro",
       "Lightroom Classic",
       "DaVinci Resolve",
     ],
-    tags: ["Sony α7 IV", "Portraits & Weddings", "Contact Sheet"],
+    tags: ["Sony FX3", "Portraits & Weddings", "Contact Sheet"],
     challenge:
       "Weddings, editorial portraits and hospitality shoots move fast across harsh midday courtyards, candle-lit rituals and blue-hour riverbanks. Mixing mismatched cameras or relying on heavy post-processing ruins skin tones and slows delivery.",
     objective:
-      "Standardise every ground commission on calibrated Sony Alpha a7 IV bodies, fast f/1.4–f/2.8 G Master lenses and dual-card RAW workflows so skin tones, shadow detail and 4K motion match effortlessly from first frame to final print.",
+      "Standardise every ground commission on calibrated Sony FX3 bodies, fast f/1.4–f/2.8 G Master lenses and dual-card recording workflows so skin tones, shadow detail and 4K motion match effortlessly from first frame to final print.",
     approach: [
       {
         title: "Match the lens to the emotional distance",
@@ -85,21 +85,21 @@ export const projects: Project[] = [
       },
       {
         title: "Scale from solo portraitist to 4-person crew",
-        text: "Intimate portraits are shot one-on-one by Ranjit; multi-day weddings add a dedicated Sony α7 IV candid photographer, an RS 3 Pro gimbal cinematographer and an off-camera lighting assistant.",
+        text: "Intimate portraits are shot one-on-one by RANJEET; multi-day weddings add a dedicated Sony FX3 candid photographer, an RS 3 Pro gimbal cinematographer and an off-camera lighting assistant.",
       },
       {
         title: "Dual-slot safety & 48-hour colour pipeline",
-        text: "Every shutter press writes simultaneously to CFexpress Type A and UHS-II SD, backs up to NVMe on location, and runs through Ranjit's custom colour profile for 48-hour preview delivery.",
+        text: "Every take records simultaneously to CFexpress Type A and SD, backs up to NVMe on location, and runs through RANJEET's custom colour profile for 48-hour preview delivery.",
       },
     ],
     capabilities: [
-      "33MP 14-bit RAW portraiture",
+      "Full-frame RAW portraiture",
       "Multi-photographer wedding direction",
       "Off-camera strobe & natural-light craft",
       "10-bit S-Cinetone & S-Log3 hybrid motion",
     ],
     results: [
-      { value: "33 MP", label: "Uncompressed 14-bit RAW master files", kind: "delivered" },
+      { value: "12.1 MP", label: "Full-frame RAW master files", kind: "delivered" },
       {
         value: "48h",
         label: "Curated & colour-graded gallery turnaround",
@@ -111,40 +111,40 @@ export const projects: Project[] = [
       "Ideal for pre-wedding and wedding commissions, executive & artist portraits, boutique hotel interiors and heritage tourism campaigns across Uttar Pradesh and Bihar.",
     thumbnail: { src: "/images/projects/thumb-sony-m4.jpg", width: 300, height: 268 },
     cardSummary:
-      "Full-frame portraits, weddings and twilight heritage series shot on the Sony Alpha a7 IV (M4) with G Master primes and Ranjit's specialist shoot crew.",
-    cardTags: ["Sony α7 IV", "85mm GM", "Weddings", "Portraits"],
+      "Full-frame portraits, weddings and twilight heritage series shot on the Sony FX3 with G Master primes and RANJEET's specialist shoot crew.",
+    cardTags: ["Sony FX3", "85mm GM", "Weddings", "Portraits"],
     categories: ["stills"],
   },
   {
     slug: "aerial-films",
     index: "02",
     code: "CS·AIR·02",
-    camera: "Mavic 3 Pro + Sony α7 IV",
+    camera: "Mavic 3 Pro + Sony FX3",
     title: "Aerial Films for Hotels, Builders & Brands",
     shortTitle: "Aerial films",
     oneLiner:
-      "Drone films and stills for hospitality, real estate and brand campaigns around Gorakhpur — planned shot by shot, flown in one visit and colour-matched to Sony α7 IV ground footage.",
-    tools: ["DJI Mavic 3 Pro", "Sony Alpha a7 IV", "Premiere Pro", "DaVinci Resolve", "Lightroom Classic"],
+      "Drone films and stills for hospitality, real estate and brand campaigns around Gorakhpur — planned shot by shot, flown in one visit and colour-matched to Sony FX3 ground footage.",
+    tools: ["DJI Mavic 3 Pro", "Sony FX3", "Premiere Pro", "DaVinci Resolve", "Lightroom Classic"],
     tags: ["Aerial film", "Brand campaign", "Stills"],
     challenge:
       "A brand film usually means two crews — a drone pilot for the wide establishing shots and a camera team for the ground detail — plus a separate edit. That is two site visits, two bills, and footage that never quite matches when it is cut together.",
     objective:
-      "Cover an entire campaign in a single visit: DJI aerials and Sony α7 IV ground cinema, graded to one look and delivered in both horizontal 16:9 and vertical 9:16.",
+      "Cover an entire campaign in a single visit: DJI aerials and Sony FX3 ground cinema, graded to one look and delivered in both horizontal 16:9 and vertical 9:16.",
     approach: [
       {
         title: "Fly the story first",
         text: "A recce sets the sun path, the airspace and the angles; the client signs off an indexed shot list before anyone drives to the location.",
       },
       {
-        title: "Shoot air and Sony M4 ground in one pass",
-        text: "Mavic 3 Pro D-Log M and Sony α7 IV S-Log3 10-bit profiles are exposed with matched ND filtration and white balance so air and ground cut seamlessly.",
+        title: "Shoot air and Sony FX3 ground in one pass",
+        text: "Mavic 3 Pro D-Log M and Sony FX3 S-Log3 10-bit profiles are exposed with matched ND filtration and white balance so air and ground cut seamlessly.",
       },
       {
         title: "Grade and cut in-house",
         text: "Stills are culled in Lightroom, the film is cut in Premiere Pro and every camera is unified in DaVinci Resolve, then exported in 16:9 and 9:16.",
       },
     ],
-    capabilities: ["Flight planning", "Aerial cinematography", "Sony α7 IV ground cinema", "DaVinci colour match"],
+    capabilities: ["Flight planning", "Aerial cinematography", "Sony FX3 ground cinema", "DaVinci colour match"],
     results: [
       { value: "85+", label: "Commissions shot and delivered", kind: "delivered" },
       {
@@ -158,8 +158,8 @@ export const projects: Project[] = [
       "The same one-visit approach fits hotel and resort films, real-estate launches, event aftermovies and tourism films across Uttar Pradesh and Bihar.",
     thumbnail: { src: "/images/projects/thumb-films.jpg", width: 300, height: 268 },
     cardSummary:
-      "Aerial and Sony α7 IV ground coverage in a single visit: drone, gimbal and stills camera shot to one look, then graded and cut in-house.",
-    cardTags: ["DJI Mavic 3", "Sony α7 IV", "Resolve", "Premiere"],
+      "Aerial and Sony FX3 ground coverage in a single visit: drone, gimbal and stills camera shot to one look, then graded and cut in-house.",
+    cardTags: ["DJI Mavic 3", "Sony FX3", "Resolve", "Premiere"],
     categories: ["aerial", "stills"],
   },
   {
@@ -171,7 +171,7 @@ export const projects: Project[] = [
     shortTitle: "Mapping & inspection",
     oneLiner:
       "Orthomosaics, 3D site models and inspection passes for construction, solar and farmland — the same GPS grid and ground reference frames on every visit.",
-    tools: ["Mapping drone", "DJI Terra", "Sony α7 IV Ground Log", "Photogrammetry"],
+    tools: ["Mapping drone", "DJI Terra", "Sony FX3 Ground Log", "Photogrammetry"],
     tags: ["Mapping", "Photogrammetry", "Inspection"],
     challenge:
       "A progress report built from hand-held photos is hard to compare month to month: different angle, different light, different scale. Everyone spends the meeting working out whether the site actually changed.",
@@ -184,7 +184,7 @@ export const projects: Project[] = [
       },
       {
         title: "Capture and process",
-        text: "Overlapping frames are stitched into a centimetre-accurate orthomosaic and paired with sharp 33MP Sony α7 IV close-ups of structural details.",
+        text: "Overlapping frames are stitched into a centimetre-accurate orthomosaic and paired with sharp Sony FX3 close-ups of structural details.",
       },
       {
         title: "Compare and report",
@@ -214,7 +214,7 @@ export const projects: Project[] = [
     index: "04",
     code: "CS·OPS·04",
     camera: "120+ Serial-Tracked Items",
-    title: "Sony M4 & Drone Kit Control System",
+    title: "Sony FX3 & Drone Kit Control System",
     shortTitle: "Kit management",
     oneLiner:
       "How the studio gear is tracked, serviced and planned: FZ100 & Mavic batteries by cycle count, CFexpress cards by write history, Sony bodies and GM lenses by calibration date.",
@@ -227,11 +227,11 @@ export const projects: Project[] = [
     approach: [
       {
         title: "Log every item by serial",
-        text: "Each Sony α7 IV body, GM lens, drone, battery, CFexpress card and filter carries a serial entry with shutter/cycle limits and service intervals.",
+        text: "Each Sony FX3 body, GM lens, drone, battery, CFexpress card and filter carries a serial entry with usage/cycle limits and service intervals.",
       },
       {
         title: "Automate readiness checks",
-        text: "A scheduled workflow reads flight and shutter logs, flags anything approaching threshold and alerts before the next call sheet goes out.",
+        text: "A scheduled workflow reads flight and camera usage logs, flags anything approaching threshold and alerts before the next call sheet goes out.",
       },
       {
         title: "Plan consumables ahead of peak season",
@@ -249,11 +249,11 @@ export const projects: Project[] = [
       },
     ],
     relevance:
-      "Gear discipline is the reason Ranjit's Sony α7 IV bodies and DJI fleet stay dependable through dust, heat, monsoon humidity and back-to-back wedding weeks.",
+      "Gear discipline is the reason RANJEET's Sony FX3 bodies and DJI fleet stay dependable through dust, heat, monsoon humidity and back-to-back wedding weeks.",
     thumbnail: { src: "/images/projects/thumb-kit.jpg", width: 280, height: 268 },
     cardSummary:
-      "Every Sony α7 IV body, G Master lens, drone battery and CFexpress card tracked by serial with automated readiness alerts.",
-    cardTags: ["Sony α7 IV", "Maintenance", "n8n", "Planning"],
+      "Every Sony FX3 body, G Master lens, drone battery and CFexpress card tracked by serial with automated readiness alerts.",
+    cardTags: ["Sony FX3", "Maintenance", "n8n", "Planning"],
     categories: ["systems"],
   },
   {
@@ -264,8 +264,8 @@ export const projects: Project[] = [
     title: "Progress Documentation for Builders",
     shortTitle: "Site documentation",
     oneLiner:
-      "Monthly aerial and Sony α7 IV ground documentation for construction and real-estate projects: identical flight lines and viewpoints delivered as an indexed archive.",
-    tools: ["Drone", "Sony Alpha a7 IV", "Lightroom", "Premiere Pro", "Client gallery"],
+      "Monthly aerial and Sony FX3 ground documentation for construction and real-estate projects: identical flight lines and viewpoints delivered as an indexed archive.",
+    tools: ["Drone", "Sony FX3", "Lightroom", "Premiere Pro", "Client gallery"],
     tags: ["Documentation", "Real estate", "Timelapse"],
     challenge:
       "Builders and developers need a visual record of progress for investors, buyers and engineers — and ad-hoc phone photos from random corners cannot be compared across a twelve-month build.",
@@ -277,8 +277,8 @@ export const projects: Project[] = [
         text: "Saved GPS coordinates, gimbal pitch angles and ground markers keep every monthly visit aligned frame-for-frame across the entire build.",
       },
       {
-        title: "Pair aerial context with Sony M4 detail",
-        text: "Boundary, access, earthworks and elevation views from the air are paired with high-resolution Sony α7 IV ground stills of interiors and MEP progress.",
+        title: "Pair aerial context with Sony FX3 detail",
+        text: "Boundary, access, earthworks and elevation views from the air are paired with high-resolution Sony FX3 ground stills of interiors and MEP progress.",
       },
       {
         title: "Deliver an investor-ready indexed pack",
@@ -299,7 +299,7 @@ export const projects: Project[] = [
       "Answers the exact questions a developer's investor pack asks: how far along, how clean the site is, and what changed since last month.",
     thumbnail: { src: "/images/projects/thumb-progress.jpg", width: 600, height: 361 },
     cardSummary:
-      "Monthly flyovers and Sony α7 IV ground milestones from locked viewpoints, delivered as an indexed archive for builders and investors.",
+      "Monthly flyovers and Sony FX3 ground milestones from locked viewpoints, delivered as an indexed archive for builders and investors.",
     cardTags: ["Documentation", "Time-lapse", "Real estate"],
     categories: ["mapping", "aerial"],
   },

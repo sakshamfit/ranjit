@@ -1,15 +1,18 @@
 import { NextResponse } from "next/server";
+import { site } from "@/content/site";
 
 /**
  * Contact endpoint.
- * Sends mail through Resend's HTTP API when RESEND_API_KEY and CONTACT_TO_EMAIL are set.
- * Without them it reports "not configured", and the form falls back to opening a
+ * Sends mail through Resend's HTTP API when RESEND_API_KEY is set.
+ * CONTACT_TO_EMAIL can override the site email; otherwise mail goes to the address
+ * in site.ts. Without an API key it reports "not configured", and the form opens a
  * pre-filled email draft in the visitor's own mail app (nothing is claimed as sent).
  */
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const isConfigured = () => Boolean(process.env.RESEND_API_KEY && process.env.CONTACT_TO_EMAIL);
+const contactToEmail = () => process.env.CONTACT_TO_EMAIL || site.email;
+const isConfigured = () => Boolean(process.env.RESEND_API_KEY);
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 const WINDOW_MS = 10 * 60 * 1000;
@@ -72,7 +75,7 @@ export async function POST(req: Request) {
       },
       body: JSON.stringify({
         from: process.env.CONTACT_FROM_EMAIL ?? "Portfolio contact <onboarding@resend.dev>",
-        to: [process.env.CONTACT_TO_EMAIL],
+        to: [contactToEmail()],
         reply_to: email,
         subject: `Portfolio: ${subject || "New message"}`,
         text: `From: ${name} <${email}>\n\n${message}`,

@@ -9,11 +9,11 @@ import { MINI_WORLD_PORTS, MINI_WORLD_SRC, MINI_WORLD_VIEWBOX } from "@/content/
 import styles from "./skills.module.css";
 
 const routes: [keyof typeof MINI_WORLD_PORTS, keyof typeof MINI_WORLD_PORTS][] = [
-  ["gorakhpur", "varanasi"],
-  ["gorakhpur", "lucknow"],
-  ["gorakhpur", "patna"],
-  ["gorakhpur", "ayodhya"],
-  ["gorakhpur", "kushinagar"],
+  ["betthia", "varanasi"],
+  ["betthia", "lucknow"],
+  ["betthia", "patna"],
+  ["betthia", "ayodhya"],
+  ["betthia", "kushinagar"],
 ];
 
 const arc = (a: readonly number[], b: readonly number[]) => {

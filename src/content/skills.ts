@@ -18,20 +18,20 @@ export const capabilities: Capability[] = [
   {
     id: "camera",
     index: "01",
-    title: "Sony α7 IV (M4), G Master Optics & Lighting",
-    summary: "Full-frame 33MP RAW & 10-bit hybrid craft honed on the camera counter and proven on set.",
+    title: "Sony FX3, G Master Optics & Lighting",
+    summary: "Full-frame RAW stills & 10-bit cinema craft honed on the camera counter and proven on set.",
     skills: [
-      "Sony Alpha a7 IV (ILCE-7M4) primary bodies",
+      "Sony FX3 (ILME-FX3) primary bodies",
       "Sony FE 24–70mm f/2.8 GM II & 85mm f/1.4 GM",
       "Sony FE 35mm f/1.4 GM & 16–35mm f/2.8 GM",
-      "14-bit uncompressed RAW & Real-Time Eye AF",
+      "Full-frame RAW stills & Real-Time Eye AF",
       "Godox AD600 / AD200 Pro off-camera strobes",
       "ND & circular polariser filtration",
       "Sensor care, AF micro-checks & calibration",
     ],
     evidence: [
       "1,000+ photographers advised on bodies and glass before launching the studio",
-      "Dual CFexpress Type A + UHS-II simultaneous recording on every portrait and wedding",
+      "Dual CFexpress Type A / SD card slots for simultaneous recording on every film shoot",
       "Consistent skin tones across midday sun, twilight ghats and strobe-lit receptions",
     ],
   },
@@ -61,7 +61,7 @@ export const capabilities: Capability[] = [
     title: "Hybrid Cinematography & Multi-Cam Direction",
     summary: "Directing couples, hoteliers and a 4-person camera crew so ground and sky tell one story.",
     skills: [
-      "Sony 4K 60p 10-bit 4:2:2 S-Log3 & S-Cinetone",
+      "Sony FX3 4K up to 120p · 10-bit 4:2:2 S-Log3 & S-Cinetone",
       "DJI RS 3 Pro 3-axis gimbal movement",
       "Multi-photographer wedding & event direction",
       "Indexed shot lists & sun-path storyboards",
@@ -71,7 +71,7 @@ export const capabilities: Capability[] = [
     evidence: [
       "Leads up to 4 crew specialists (candid stills, gimbal cinema, lighting & data wrangling)",
       "Hotel, real-estate and pre-wedding films executed from one unified shot index",
-      "Matched focal lengths and motion cadence between Sony α7 IV and Mavic 3 Pro",
+      "Matched focal lengths and motion cadence between Sony FX3 and Mavic 3 Pro",
     ],
   },
   {
@@ -117,7 +117,7 @@ export const capabilities: Capability[] = [
 
 /** Skills highlighted in the immersive landscape, each with a one-line proof point. */
 export const landscapeSkills = [
-  { label: "Sony α7 IV (M4) craft", proof: "33MP 14-bit RAW portraits, weddings and interiors on G Master primes." },
+  { label: "Sony FX3 craft", proof: "Full-frame RAW portraits, weddings and interiors on G Master primes." },
   { label: "Drone cinematography", proof: "500+ DGCA-compliant flights for hotels, builders, ghats and events." },
   { label: "Multi-photographer crew", proof: "Solo agility or a 4-person team covering candid stills, gimbal and strobes." },
   { label: "Mapping & orthomosaics", proof: "12+ sites flown on repeatable GPS grids for engineering & investor packs." },

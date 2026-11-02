@@ -13,7 +13,7 @@ const pct = ([x, y]: readonly [number, number]) => ({
 });
 
 /**
- * The training journey on a real map: Gorakhpur (home base) to the city where the
+ * The training journey on a real map: Betthia (home base) to the city where the
  * remote pilot training was completed. The route draws itself when revealed (CSS, via
  * the reveal system); a small plane then travels it once. Labels are HTML so they stay
  * legible at every size.
@@ -50,7 +50,7 @@ export function JourneyMap() {
         viewBox={`${VB.x} ${VB.y} ${VB.w} ${VB.h}`}
         className="absolute inset-0 h-full w-full"
         role="img"
-        aria-label="Map of the training journey from Gorakhpur, the home base in Uttar Pradesh, to the city where the remote pilot certificate training was completed."
+        aria-label="Map of the training journey from Betthia, the home base in Bihar, to the city where the remote pilot certificate training was completed."
       >
         <defs>
           <linearGradient id="arc-grad" x1="0" y1="0" x2="1" y2="0">
@@ -86,7 +86,7 @@ export function JourneyMap() {
         <span className={styles.labelDetail}>Remote Pilot Certificate, 2021</span>
       </div>
       <div className={styles.label} style={pct(JOURNEY_POINTS.home)} data-align="bottom">
-        <span className={styles.labelCity}>Gorakhpur, Uttar Pradesh</span>
+        <span className={styles.labelCity}>Betthia, Bihar</span>
         <span className={styles.labelDetail}>Home base and studio</span>
       </div>
     </div>

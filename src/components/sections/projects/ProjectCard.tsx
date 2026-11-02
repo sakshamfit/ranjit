@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 /**
  * Framed & Indexed Case Study Card: clean matted thumbnail frame with hairline corner crop marks,
- * plus crisp tabular index header (`IDX 01 · CS·M4·01 · Sony α7 IV`) above the title.
+ * plus crisp tabular index header (`IDX 01 · CS·FX3·01 · Sony FX3`) above the title.
  */
 export function ProjectCard({
   project,

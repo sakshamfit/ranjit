@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const outDir = join(root, "public/resume");
-const outFile = "Ranjit-Drone-Photographer-CV.pdf";
+const outFile = "RANJEET-Drone-Photographer-CV.pdf";
 
 const PAGE = { w: 595.28, h: 841.89 }; // A4
 const MARGIN = 46;
@@ -14,38 +14,39 @@ const LEAD = 12.6;
 
 /** [text, style] where style: h1 | h2 | body | meta | gap */
 const LINES = [
-  ["RANJIT", "h1"],
-  ["Sony Alpha a7 IV (M4) Photographer & Aerial Cinematographer - Gorakhpur, Uttar Pradesh", "meta"],
-  ["chauhanomveer460@gmail.com  ·  +91 80093 69410  ·  Instagram / YouTube @gkp_drone", "meta"],
+  ["RANJEET", "h1"],
+  ["Sony FX3 Photographer & Aerial Cinematographer - Betthia, Bihar", "meta"],
+  ["rg3917289@gmail.com  ·  +91 76547 18165  ·  Instagram @ranjeet_gupta_94", "meta"],
+  ["Bahag 1, West Chhapar, Betthia, Bihar, India", "meta"],
   ["", "gap"],
   ["PROFILE", "h2"],
-  ["Full-frame Sony Alpha a7 IV (ILCE-7M4) photographer and DGCA-compliant aerial cinematographer", "body"],
-  ["working across Uttar Pradesh and Bihar. Shoots 33MP 14-bit RAW portraits, weddings, hospitality", "body"],
+  ["Full-frame Sony FX3 (ILME-FX3) photographer and DGCA-compliant aerial cinematographer", "body"],
+  ["working across Uttar Pradesh and Bihar. Shoots full-frame RAW portraits, weddings, hospitality", "body"],
   ["campaigns, 4K 10-bit S-Log3 / D-Log films and repeatable mapping grids - solo or leading a", "body"],
   ["4-specialist shoot crew. Graded stills in 48 hours, edited films inside 7 days, rights in writing.", "body"],
   ["", "gap"],
   ["EXPERIENCE", "h2"],
-  ["Ranjit Visuals - Lead Sony a7 IV Photographer & Aerial Cinematographer, Gorakhpur   2021 - Present", "body"],
+  ["RANJEET Visuals - Lead Sony FX3 Photographer & Aerial Cinematographer, Betthia   2021 - Present", "body"],
   ["· Directed and shot 85+ commissions: weddings, couple & editorial portraits, hotel and real-estate", "body"],
   ["  films, heritage series and monthly site documentation across 12+ districts.", "body"],
-  ["· Logged 500+ incident-free drone flights and leads an on-call 4-person crew (candid Sony a7 IV", "body"],
+  ["· Logged 500+ incident-free drone flights and leads an on-call 4-person crew (candid Sony FX3", "body"],
   ["  second shooter, RS 3 Pro gimbal cinematographer and off-camera Godox lighting / SSD wrangler).", "body"],
-  ["· Built a colour-managed post pipeline matching Sony 14-bit RAW & S-Log3 with DJI D-Log M in", "body"],
+  ["· Built a colour-managed post pipeline matching Sony full-frame RAW & S-Log3 with DJI D-Log M in", "body"],
   ["  Lightroom Classic, DaVinci Resolve and Premiere Pro (16:9 cinema + 9:16 social deliverables).", "body"],
   ["Camera House & Studio - Camera Specialist (Sony Full-Frame, Optics & Studio)   2018 - 2021", "body"],
   ["· Advised 1,000+ working photographers on bodies, G Master / prime glass, strobes and storage.", "body"],
   ["· Inspected, sensor-cleaned and calibrated mirrorless & DSLR kits; assisted on 25+ studio shoots.", "body"],
   ["", "gap"],
   ["INDEXED CASE STUDIES & PACKAGES", "h2"],
-  ["01 Sony a7 IV Portraits & Weddings - 33MP RAW & 10-bit 4K on FE 85mm f/1.4 & 24-70mm f/2.8 GM II.", "body"],
-  ["02 Aerial & Brand Films - Mavic 3 Pro + Sony a7 IV ground cinema unified in one Resolve grade.", "body"],
+  ["01 Sony FX3 Portraits & Weddings - Full-frame RAW & 10-bit 4K on FE 85mm f/1.4 & 24-70mm f/2.8 GM II.", "body"],
+  ["02 Aerial & Brand Films - Mavic 3 Pro + Sony FX3 ground cinema unified in one Resolve grade.", "body"],
   ["03 Aerial Mapping & Inspection - Repeatable GPS grids, 2D orthomosaics & structural ground logs.", "body"],
   ["04 Kit Control System - 120+ serial-tracked bodies, lenses, FZ100/flight batteries & CFexpress cards.", "body"],
   ["05 Builder Progress Docs - 8 locked aerial & ground viewpoints captured monthly through handover.", "body"],
   ["", "gap"],
   ["PRIMARY RIG & SKILLS", "h2"],
-  ["Cameras & Glass: Sony Alpha a7 IV (M4), FE 24-70mm f/2.8 GM II, FE 85mm f/1.4 GM, FE 35mm f/1.4 GM,", "body"],
-  ["FE 16-35mm f/2.8 GM, Godox AD600/AD200 Pro strobes, DJI RS 3 Pro gimbal, dual CFexpress Type A.", "body"],
+  ["Cameras & Glass: Sony FX3, FE 24-70mm f/2.8 GM II, FE 85mm f/1.4 GM, FE 35mm f/1.4 GM,", "body"],
+  ["FE 16-35mm f/2.8 GM, Godox AD600/AD200 Pro strobes, DJI RS 3 Pro gimbal, CFexpress Type A / SD dual slots.", "body"],
   ["Aerial: DJI Mavic 3 Pro (24/70/166mm), DGCA compliance, waypoint grids, ND filtration, twilight passes.", "body"],
   ["Post: Lightroom Classic, DaVinci Resolve Studio, Premiere Pro, 3-2-1 checksummed SSD backups.", "body"],
   ["", "gap"],
@@ -83,7 +84,7 @@ for (const [text, style] of LINES) {
 }
 
 parts.push(`0.6 0.65 0.72 RG 0.8 w ${MARGIN} 38 m ${PAGE.w - MARGIN} 38 l S`);
-parts.push(`BT /F1 8 Tf 1 0 0 1 ${MARGIN} 27 Tm 0.4 0.45 0.52 rg (Ranjit - Sony a7 IV Photographer & Aerial Cinematographer, Gorakhpur, UP. Updated November 2026.) Tj ET`);
+parts.push(`BT /F1 8 Tf 1 0 0 1 ${MARGIN} 27 Tm 0.4 0.45 0.52 rg (RANJEET - Sony FX3 Photographer & Aerial Cinematographer, Betthia, Bihar. Updated November 2026.) Tj ET`);
 
 const content = parts.join("\n");
 const objects = [

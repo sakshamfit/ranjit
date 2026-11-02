@@ -11,8 +11,8 @@ const v = (vars: Record<string, string>) => vars as CSSProperties;
 
 /** Numbers from the case studies themselves. */
 const verified = [
-  { value: `0${projects.length}`, label: "Indexed case studies", source: "Sony α7 IV, aerial & systems" },
-  { value: "33MP", label: "Sony α7 IV RAW stills", source: "14-bit + 10-bit 4K cinema" },
+  { value: `0${projects.length}`, label: "Indexed case studies", source: "Sony FX3, aerial & systems" },
+  { value: "4K", label: "Sony FX3 cinema", source: "10-bit 4:2:2 + S-Log3" },
   { value: "500+", label: "Permitted flights logged", source: "Across UP & Bihar" },
   { value: "48h", label: "Graded gallery delivery", source: "Dual-slot & NVMe backed up" },
 ];
@@ -63,17 +63,17 @@ export function ProjectsLanding() {
 
           <div className={styles.aCopy}>
             <p className={`${styles.accent} dm-2`} data-reveal style={v({ "--d": "1900ms" })}>
-              Sony M4 in hand, drone in the sky
+              Sony FX3 in hand, drone in the sky
             </p>
             <p className="type-body pretty dm-3 mt-4 text-[0.95rem] text-white/80" data-reveal style={v({ "--d": "2000ms" })}>
-              Five documented chapters covering Sony Alpha a7 IV portraiture &amp; weddings, aerial
+              Five documented chapters covering Sony FX3 portraiture &amp; weddings, aerial
               brand films, photogrammetric mapping, serial-tracked kit control and monthly builder
               documentation.
             </p>
           </div>
 
           <p className={`${styles.impact} ${styles.aImpact} dm-0`} data-reveal style={v({ "--d": "1750ms", "--dur": "700ms" })}>
-            Sony M4
+            Sony FX3
             <br />
             to the sky
           </p>
