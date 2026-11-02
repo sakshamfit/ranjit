@@ -6,7 +6,7 @@ import { NextPage } from "@/components/layout/NextPage";
 export const metadata: Metadata = {
   title: "Experience",
   description:
-    "Drone photography and aerial cinematography in Gorakhpur, plus three years as a camera specialist in sales, service and studio work.",
+    "Drone photography and aerial cinematography in Betthia, plus three years as a camera specialist in sales, service and studio work.",
 };
 
 export default function ExperiencePage() {

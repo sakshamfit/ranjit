@@ -76,7 +76,7 @@ export function ContactSection() {
               </span>
             </h1>
             <p className="type-lead pretty mt-7 max-w-[28rem] text-ink-2" data-reveal="left" style={{ ["--d" as string]: "240ms" }}>
-              Book Ranjit solo on the Sony α7 IV &amp; Mavic 3 Pro, or bring the full 4-person
+              Book RANJEET solo on the Sony FX3 &amp; Mavic 3 Pro, or bring the full 4-person
               wedding, hotel and campaign crew — portraits, films and monthly site documentation.
             </p>
 
@@ -135,7 +135,7 @@ export function ContactSection() {
               <span className="text-blue">Better opportunities.</span>
             </p>
             <svg className={styles.underline} viewBox="0 0 160 14" fill="none">
-              <path d="M4 10 C 50 2, 110 2, 156 6" stroke="#145fe5" strokeWidth="2.2" strokeLinecap="round" pathLength={1} className={styles.draw} />
+              <path d="FX3 10 C 50 2, 110 2, 156 6" stroke="#145fe5" strokeWidth="2.2" strokeLinecap="round" pathLength={1} className={styles.draw} />
             </svg>
             {/* lower note from the reference: an arrow from the portrait to "same good energy" */}
             <svg className={styles.doodleBottom} viewBox="0 0 180 120" fill="none">
@@ -148,7 +148,7 @@ export function ContactSection() {
               here too.
             </p>
             <svg className={styles.underlineBottom} viewBox="0 0 120 12" fill="none">
-              <path d="M4 8 C 40 2, 80 2, 116 5" stroke="#145fe5" strokeWidth="2" strokeLinecap="round" pathLength={1} className={styles.draw} />
+              <path d="FX3 8 C 40 2, 80 2, 116 5" stroke="#145fe5" strokeWidth="2" strokeLinecap="round" pathLength={1} className={styles.draw} />
             </svg>
           </div>
 

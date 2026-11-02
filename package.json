@@ -1,8 +1,8 @@
 {
-  "name": "ranjit-drone-portfolio",
+  "name": "ranjeet-drone-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Portfolio of Ranjit, drone photographer and aerial cinematographer, Gorakhpur.",
+  "description": "Portfolio of RANJEET, drone photographer and aerial cinematographer, Betthia, Bihar.",
   "scripts": {
     "dev": "next dev --hostname 0.0.0.0 --port 3000",
     "build": "next build",

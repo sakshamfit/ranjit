@@ -28,7 +28,7 @@ const hand = localFont({
   preload: false,
 });
 
-const roleLine = "Drone Photographer in Gorakhpur";
+const roleLine = "Drone Photographer in Betthia";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -39,9 +39,10 @@ export const metadata: Metadata = {
   description: site.description,
   authors: [{ name: site.name }],
   keywords: [
-    "Drone Photographer Gorakhpur",
+    "Drone Photographer Betthia",
     "Aerial Cinematographer",
-    "Drone videography Uttar Pradesh",
+    "Drone videography Bihar",
+    "Sony FX3 cinematographer",
     "Aerial photography",
     "Drone mapping",
     "Camera specialist",
@@ -52,7 +53,7 @@ export const metadata: Metadata = {
     description: site.description,
     siteName: site.name,
     locale: "en_IN",
-    images: [{ url: "/images/ui/og.jpg", width: 1200, height: 630, alt: "Ranjit, drone photographer in Gorakhpur" }],
+    images: [{ url: "/images/ui/og.jpg", width: 1200, height: 630, alt: "RANJEET, drone photographer in Betthia" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -80,7 +81,13 @@ const personJsonLd = {
   jobTitle: site.role,
   email: `mailto:${site.email}`,
   telephone: site.phone.display,
-  address: { "@type": "PostalAddress", addressLocality: "Gorakhpur", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: site.address.street,
+    addressLocality: site.address.city,
+    addressRegion: site.address.region,
+    addressCountry: site.address.country,
+  },
   // TODO: add the training school's name once it is confirmed in /src/content/education.ts
   sameAs: socials.map((s) => s.href).filter(Boolean),
   knowsAbout: [

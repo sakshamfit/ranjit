@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { FramesAndIndexSection } from "@/components/sections/frames/FramesAndIndexSection";
-import { SonyM4Showcase } from "@/components/sections/frames/SonyM4Showcase";
+import { SonyFX3Showcase } from "@/components/sections/frames/SonyFX3Showcase";
 import { PhotographersAndPackages } from "@/components/sections/frames/PhotographersAndPackages";
 import { NextPage } from "@/components/layout/NextPage";
 
 export const metadata: Metadata = {
   title: "Frames & Master Index",
   description:
-    "Curated photography contact sheet, EXIF master index, Sony Alpha a7 IV (M4) optical rig and specialist shoot crew led by Ranjit.",
+    "Curated photography contact sheet, EXIF master index, Sony FX3 optical rig and specialist shoot crew led by RANJEET.",
 };
 
 export default function FramesPage() {
@@ -17,12 +17,12 @@ export default function FramesPage() {
         headingAs="h1"
         eyebrow="Monograph Contact Sheet · Master Plate Index"
       />
-      <SonyM4Showcase />
+      <SonyFX3Showcase />
       <PhotographersAndPackages />
       <NextPage
         label="Experience"
         href="/experience"
-        description="Studio production metrics, flight & Sony M4 shoot pipeline, and Ranjit's optical background in Gorakhpur."
+        description="Studio production metrics, flight & Sony FX3 shoot pipeline, and RANJEET's optical background in Betthia."
       />
     </main>
   );

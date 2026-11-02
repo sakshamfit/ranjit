@@ -7,7 +7,7 @@
  *    scripts and the image sizes this screen actually uses, so the whole site works offline.
  * Anything cross-origin (Instagram, YouTube ...), non-GET, or /api/* goes straight to the network. */
 
-const V = "v5";
+const V = "v6";
 const PAGES = `pages-${V}`;
 const STATIC = `static-${V}`;
 const MEDIA = `media-${V}`;
@@ -209,5 +209,5 @@ async function warm({ width = 828 }) {
   };
   await save(statics, assets);
   await save(media, images);
-  await save(media, ["/resume/Ranjit-Drone-Photographer-CV.pdf"], 1);
+  await save(media, ["/resume/RANJEET-Drone-Photographer-CV.pdf"], 1);
 }

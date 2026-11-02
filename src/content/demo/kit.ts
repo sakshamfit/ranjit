@@ -19,7 +19,7 @@ export type LabParams = { -readonly [K in keyof typeof labDefaults]: number };
 
 /** Shoot days, last 12 months, by the city the work was shot in. */
 export const bases = [
-  { label: "Gorakhpur (base)", value: 62 },
+  { label: "Betthia (base)", value: 62 },
   { label: "Lucknow", value: 34 },
   { label: "Varanasi", value: 21 },
   { label: "Patna", value: 18 },
@@ -28,7 +28,7 @@ export const bases = [
 
 /** Jobs delivered, last 12 months, by type of work. */
 export const workTypes = [
-  { label: "Sony M4 portraits & weddings", value: 46 },
+  { label: "Sony FX3 portraits & weddings", value: 46 },
   { label: "Aerial & brand films", value: 38 },
   { label: "Hospitality & interiors", value: 29 },
   { label: "Mapping & orthomosaics", value: 24 },
@@ -42,7 +42,7 @@ export const bookedDays = [14, 18, 21, 13, 15, 16, 17, 18, 19, 20, 16, 17];
 export const kitDraw = [20, 26, 30, 17, 19, 22, 26, 27, 29, 31, 23, 25];
 
 export const coverageTiles = [
-  { label: "Flights & Sony M4 shoots", value: "500+" },
+  { label: "Flights & Sony FX3 shoots", value: "500+" },
   { label: "Shoot days, last 12 months", value: "164 days" },
   { label: "Commissions delivered", value: "85+" },
   { label: "Average stills turnaround", value: "48 hours" },

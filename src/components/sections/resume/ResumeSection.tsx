@@ -59,7 +59,7 @@ export function ResumeSection() {
                 great together.
               </p>
               <svg viewBox="0 0 160 14" fill="none" className={styles.underline}>
-                <path d="M4 10 C 50 2, 110 2, 156 6" stroke="#145fe5" strokeWidth="2.2" strokeLinecap="round" pathLength={1} className={styles.draw} />
+                <path d="FX3 10 C 50 2, 110 2, 156 6" stroke="#145fe5" strokeWidth="2.2" strokeLinecap="round" pathLength={1} className={styles.draw} />
               </svg>
             </div>
 
@@ -82,7 +82,7 @@ export function ResumeSection() {
             <div className={styles.portrait} data-reveal="fade" style={{ ["--d" as string]: "220ms" }}>
               <Image
                 src="/images/portraits/resume.webp"
-                alt="Ranjit in a tailored dark blazer holding his Sony Alpha a7 IV (M4) mirrorless camera"
+                alt="RANJEET in a tailored dark blazer holding his camera"
                 width={960}
                 height={1082}
                 sizes="(min-width: 1024px) 34vw, 80vw"

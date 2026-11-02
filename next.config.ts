@@ -17,6 +17,16 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/projects/sony-m4-photography",
+        destination: "/projects/sony-fx3-photography",
+        permanent: true,
+      },
+      {
+        source: "/resume/Ranjit-Drone-Photographer-CV.pdf",
+        destination: "/resume/RANJEET-Drone-Photographer-CV.pdf",
+        permanent: true,
+      },
+      {
         // the profile opens on the About section, so /about is the home page
         source: "/about",
         destination: "/#about",

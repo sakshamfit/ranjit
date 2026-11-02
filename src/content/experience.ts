@@ -1,5 +1,5 @@
 /**
- * Professional experience for Ranjit.
+ * Professional experience for RANJEET.
  */
 
 export type Kpi = {
@@ -33,22 +33,22 @@ export type Role = {
 export const experience: Role[] = [
   {
     id: "aerial-practice",
-    company: "Ranjit Visuals — Sony M4 & Aerial Studio",
-    role: "Lead Photographer (Sony α7 IV) & Aerial Cinematographer",
-    location: "Gorakhpur, Uttar Pradesh",
+    company: "RANJEET Visuals — Sony FX3 & Aerial Studio",
+    role: "Lead Photographer (Sony FX3) & Aerial Cinematographer",
+    location: "Betthia, Bihar",
     start: "2021",
     end: "Present",
     startISO: "2021-01",
     endISO: "2026-11",
     context:
-      "Full-frame Sony Alpha a7 IV photography, multi-camera wedding & hospitality crews, DGCA-compliant aerial films and monthly site documentation.",
+      "Full-frame Sony FX3 photography, multi-camera wedding & hospitality crews, DGCA-compliant aerial films and monthly site documentation.",
     achievements: [
-      "Directed and shot 85+ commissions combining Sony Alpha a7 IV (M4) ground photography (portraits, weddings, hotel interiors, heritage campaigns) with Mavic 3 Pro aerial cinema across Uttar Pradesh and Bihar.",
-      "Logged 500+ incident-free drone flights behind a written pre-flight checklist and assembled an on-call 4-specialist crew (candid Sony M4 shooter, RS 3 Pro gimbal operator and lighting/data tech) for full-scale events.",
-      "Engineered a colour-managed post pipeline matching Sony 14-bit RAW / 10-bit S-Log3 with DJI D-Log M in DaVinci Resolve and Lightroom Classic — delivering graded stills in 48 hours and 4K + 9:16 films within 7 days.",
+      "Directed and shot 85+ commissions combining Sony FX3 ground photography (portraits, weddings, hotel interiors, heritage campaigns) with Mavic 3 Pro aerial cinema across Uttar Pradesh and Bihar.",
+      "Logged 500+ incident-free drone flights behind a written pre-flight checklist and assembled an on-call 4-specialist crew (candid Sony FX3 shooter, RS 3 Pro gimbal operator and lighting/data tech) for full-scale events.",
+      "Engineered a colour-managed post pipeline matching Sony full-frame RAW / 10-bit S-Log3 with DJI D-Log M in DaVinci Resolve and Lightroom Classic — delivering graded stills in 48 hours and 4K + 9:16 films within 7 days.",
     ],
     accomplishment:
-      "One creative lead holding both the Sony α7 IV and the flight controller, backed by a trusted crew when scale demands it — so every frame shares one unmistakable look.",
+      "One creative lead holding both the Sony FX3 and the flight controller, backed by a trusted crew when scale demands it — so every frame shares one unmistakable look.",
     kpis: [
       { value: 500, suffix: "+", label: "Flights logged", icon: "clock" },
       { value: 85, suffix: "+", label: "Commissions delivered", icon: "list" },
@@ -56,7 +56,7 @@ export const experience: Role[] = [
       { value: 4, label: "Specialist shoot crew roster", icon: "users" },
     ],
     tools: [
-      "Sony Alpha a7 IV (M4)",
+      "Sony FX3",
       "FE 24–70 & 85mm GM",
       "DJI Mavic 3 Pro",
       "Lightroom Classic",
@@ -69,7 +69,7 @@ export const experience: Role[] = [
     id: "camera-specialist",
     company: "Camera House & Studio Counter",
     role: "Camera Specialist — Sony Full-Frame, Optics & Studio",
-    location: "Gorakhpur, Uttar Pradesh",
+    location: "Betthia, Bihar",
     start: "2018",
     end: "2021",
     startISO: "2018-01",
@@ -97,8 +97,8 @@ export const experience: Role[] = [
 /** The indexed pipeline behind every commission, from recce to hand-over. */
 export const flightPipeline = [
   { id: "recce", title: "01 · Recce & permits", detail: "Sun path, lenses & airspace", note: "Indexed shot list agreed" },
-  { id: "fly", title: "02 · Air & Sony M4", detail: "33MP RAW + 4K 10-bit + Drone", note: "Solo or 4-person crew" },
-  { id: "backup", title: "03 · Dual-slot backup", detail: "CFexpress + SD + NVMe SSD", note: "Verified before leaving set" },
+  { id: "fly", title: "02 · Air & Sony FX3", detail: "Full-frame stills + 4K 10-bit + Drone", note: "Solo or 4-person crew" },
+  { id: "backup", title: "03 · Dual-slot backup", detail: "Dual-card recording + NVMe SSD", note: "Verified before leaving set" },
   { id: "edit", title: "04 · Cull & cut", detail: "Lightroom + Premiere Pro", note: "Contact sheet indexed" },
   { id: "grade", title: "05 · Unified grade", detail: "DaVinci Resolve Studio", note: "Sony S-Log3 ↔ DJI D-Log" },
   { id: "deliver", title: "06 · Gallery & license", detail: "Print TIFF, web, 16:9 & 9:16", note: "48h stills · 5–7d film" },
@@ -106,7 +106,7 @@ export const flightPipeline = [
 
 /** What keeps the kit reliable: three habits, from the equipment log. */
 export const kitFunnel = [
-  { label: "Pre-shoot Sony M4 & drone checklist", value: "Every booking" },
+  { label: "Pre-shoot Sony FX3 & drone checklist", value: "Every booking" },
   { label: "FZ100 & flight battery cycle log", value: "Serial tracked" },
   { label: "Dual-slot + SSD checksummed on site", value: "3 copies" },
 ] as const;

@@ -14,11 +14,11 @@ import { TransitionLink } from "./TransitionLink";
 
 /* what travels in the case: the short answer to "what can you shoot with?" */
 const kit = [
-  "Sony α7 IV (M4)",
+  "Sony FX3",
   "FE 85 & 24–70 GM",
   "DJI Mavic 3 Pro",
   "Godox Strobes",
-  "CFexpress-A & SSD",
+  "CFexpress-A / SD & SSD",
   "ND Filter Set",
 ];
 
@@ -55,7 +55,7 @@ export function SiteFooter() {
             />
             <Image
               src="/images/portraits/shirt.webp"
-              alt="Ranjit in a crisp button-down shirt holding his Sony Alpha a7 IV (M4) camera"
+              alt="RANJEET in a crisp button-down shirt holding his camera"
               width={665}
               height={1900}
               sizes="(min-width: 768px) 19rem, 45vw"
@@ -71,8 +71,8 @@ export function SiteFooter() {
               Let&apos;s shoot it<span className="text-blue">.</span>
             </p>
             <p className="type-lead pretty mt-5 max-w-[34rem] text-ink-2" data-reveal style={{ ["--d" as string]: "160ms" }}>
-              Book Ranjit solo with his Sony α7 IV and Mavic 3 Pro, or bring the full 4-specialist
-              wedding and commercial crew across Gorakhpur, Uttar Pradesh and Bihar.
+              Book RANJEET solo with his Sony FX3 and Mavic 3 Pro, or bring the full 4-specialist
+              wedding and commercial crew across Bihar and eastern Uttar Pradesh.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3" data-reveal style={{ ["--d" as string]: "240ms" }}>
               <a href={`mailto:${site.email}`} className="btn btn-primary">
@@ -122,7 +122,7 @@ export function SiteFooter() {
         <div className="shell grid gap-12 py-16 md:grid-cols-12 md:gap-8">
           <div className="md:col-span-4" data-reveal="fade" style={{ ["--dur" as string]: "500ms" }}>
             <p className="text-[1.1rem] font-[680] uppercase tracking-[0.08em]">{site.name}</p>
-            <p className="mt-2 text-[0.92rem] text-white/70">Sony α7 IV photography, aerial cinema &amp; mapping</p>
+            <p className="mt-2 text-[0.92rem] text-white/70">Sony FX3 photography, aerial cinema &amp; mapping</p>
             <p className="mt-3 inline-flex items-center gap-2 text-[0.9rem] text-white/70">
               <MapPin size={16} aria-hidden />
               {site.location}

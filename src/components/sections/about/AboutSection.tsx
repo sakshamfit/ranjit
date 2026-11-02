@@ -103,11 +103,11 @@ export function AboutSection() {
       <div className={styles.stage}>
         <div className={styles.topRow}>
           <p className={styles.labels} data-reveal style={{ ["--d" as string]: "120ms", ["--ry" as string]: "8px", ["--dur" as string]: "400ms" }}>
-            Sony α7 IV photographer
+            Sony FX3 photographer
             <br />
             Aerial cinematographer
             <br />
-            Based in Gorakhpur
+            Based in Betthia
           </p>
           <ol className={styles.chain} aria-label="Indexed stages of the work" data-reveal style={{ ["--d" as string]: "160ms", ["--ry" as string]: "8px", ["--dur" as string]: "400ms" }}>
             {domains.map((d) => (
@@ -118,7 +118,7 @@ export function AboutSection() {
             ))}
           </ol>
           <p className={cn(styles.labels, styles.labelsRight)} data-reveal style={{ ["--d" as string]: "200ms", ["--ry" as string]: "8px", ["--dur" as string]: "400ms" }}>
-            33MP RAW
+            FULL-FRAME
             <br />
             4K 10-Bit
             <br />

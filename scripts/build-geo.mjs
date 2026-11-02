@@ -39,7 +39,7 @@ const withoutAntarctica = {
 };
 const W = 1000;
 const H = 470;
-// The control-room map covers the region Ranjit actually flies in (India and its neighbours),
+// The control-room map covers the region RANJEET actually flies in (India and its neighbours),
 // so the cities in the demonstration data are legible instead of a cluster of dots.
 const regionPolygon = (west, south, east, north) => ({
   type: "Feature",
@@ -73,6 +73,8 @@ const worldPath = geoPath(world).digits(1)(withoutAntarctica);
 // Bases, cities and landmarks used by the demonstration flight data
 // (coordinates are public geography).
 const ports = {
+  betthia: [84.502, 26.802], // Betthia / Bettiah city centre; not an exact street pin
+  betthia: [84.502, 26.802], // Betthia / Bettiah city centre; not an exact street pin
   gorakhpur: [83.3732, 26.7606],
   varanasi: [82.9739, 25.3176],
   lucknow: [80.9462, 26.8467],
@@ -92,9 +94,9 @@ const ports = {
 };
 const portXY = Object.fromEntries(Object.entries(ports).map(([k, ll]) => [k, world(ll).map(round)]));
 
-// ---------- 2. Training journey (Gorakhpur -> training city), higher-detail 50m land
-const gorakhpur = [83.3732, 26.7606];
-const training = [77.209, 28.6139]; // TODO: the city Ranjit actually trained in
+// ---------- 2. Training journey (Betthia -> training city), higher-detail 50m land
+const home = ports.betthia;
+const training = [77.209, 28.6139]; // TODO: the city RANJEET actually trained in
 const JW = 1000;
 const JH = 560;
 const journeyRegion = regionPolygon(66, 5, 99, 37);
@@ -114,8 +116,8 @@ const nepal = c50.features.find((f) => f.id === "524");
 const journeyIndia = geoPath(journey).digits(0)(india);
 const journeyNepal = geoPath(journey).digits(0)(nepal);
 // great-circle arc between the two pins
-const arc = geoPath(journey).digits(1)({ type: "LineString", coordinates: [gorakhpur, training] });
-const homeXY = journey(gorakhpur).map(round);
+const arc = geoPath(journey).digits(1)({ type: "LineString", coordinates: [home, training] });
+const homeXY = journey(home).map(round);
 const trainingXY = journey(training).map(round);
 
 // The visible window is fitted to the two pins, so the mapper never has to hand-tune it.

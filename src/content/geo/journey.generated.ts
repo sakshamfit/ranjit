@@ -4,6 +4,6 @@
 export const JOURNEY_VIEWBOX = { width: 1000, height: 560 } as const;
 /** Land, France and India outlines, cropped to the map window, as a static image. */
 export const JOURNEY_BASE_SRC = "/images/geo/journey-base.svg";
-export const JOURNEY_WINDOW = {"x":269,"y":49,"w":395,"h":229} as const;
-export const JOURNEY_ARC_PATH = "M513.5,208.9L418.5,176.6";
-export const JOURNEY_POINTS = { home: [513.5,208.9], training: [418.5,176.6] } as const;
+export const JOURNEY_WINDOW = {"x":269,"y":49,"w":412,"h":239} as const;
+export const JOURNEY_ARC_PATH = "M530.9,208.2L475.1,191.7L418.5,176.6";
+export const JOURNEY_POINTS = { home: [530.9,208.2], training: [418.5,176.6] } as const;

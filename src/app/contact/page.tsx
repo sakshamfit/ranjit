@@ -4,7 +4,7 @@ import { NextPage } from "@/components/layout/NextPage";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with Ranjit about drone photography, aerial film, mapping and site documentation in Gorakhpur.",
+  description: "Get in touch with RANJEET about drone photography, aerial film, mapping and site documentation in Betthia.",
 };
 
 export default function ContactPage() {

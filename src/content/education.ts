@@ -1,5 +1,5 @@
 /**
- * Training and education for Ranjit.
+ * Training and education for RANJEET.
  *
  * TODO: the school, the training partner and the years are placeholders — replace them
  * with the real record. The layout expects two qualifications.
@@ -43,7 +43,7 @@ export const qualifications: Qualification[] = [
     id: "bachelor",
     degree: "Bachelor's degree — add the subject",
     school: "Add the university or college",
-    location: "Gorakhpur, Uttar Pradesh",
+    location: "Betthia, Bihar",
     start: "2015",
     end: "2018",
   },
@@ -83,8 +83,8 @@ export const campusCallouts: CampusCallout[] = [
   {
     id: "location",
     label: "Home base",
-    title: "Gorakhpur, Uttar Pradesh",
-    text: "Shooting across eastern Uttar Pradesh and Bihar, from ghats and farmland to new construction.",
+    title: "Betthia, Bihar",
+    text: "Based at Bahag 1, West Chhapar, Betthia, Bihar, and shooting across Bihar and eastern Uttar Pradesh.",
     side: "right",
   },
   {

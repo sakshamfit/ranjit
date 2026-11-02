@@ -3,7 +3,7 @@ import { site } from "@/content/site";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: `${site.name} | Drone Photographer, Gorakhpur`,
+    name: `${site.name} | Drone Photographer, Betthia`,
     short_name: site.name,
     description: site.description,
     id: "/",
